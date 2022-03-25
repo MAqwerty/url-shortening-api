@@ -1,0 +1,212 @@
+.container-Article1-Main{
+    width: 80%;
+    height: max-content;
+    transform: translateY(-100px);
+}
+
+.header-Article1-Main{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #3a3053;
+    background-image: url(./../../../assets/svg/bg-shorten-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.input-Article1-Main{
+    width: 65%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding-left: 50px;
+}
+
+.input-Article1-Main-valid{
+    color: red;
+    border: red solid 2px;
+}
+
+.BTN-Article1-Main{
+    width: 25%;
+    height: 50px;
+    background-image: linear-gradient(to right,#4fc7d5,#319bb6);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px ;
+}
+.BTN-Article1-Main:hover{
+    background-image:linear-gradient(to right,#319bb6,#4fc7d5);
+    border: #319bb6 solid 2px;
+}
+.BTN-Article1-Main:active{
+    background-image: linear-gradient(to right,#319bb6,#4fc7d5);
+}
+
+.p-valid-email{
+    color: rgba(255, 0, 0, 0.7);
+    font-size: medium;
+    display: none;
+    font-style: italic;
+    position: absolute;
+    left: 50px;
+    top: 40px;
+}
+
+.container-shorterlinks-Article1{
+    width: 100%;
+    height: max-content;
+    margin-top: 25px;
+}
+
+.div-links{
+    width: 100%;
+    height: 75px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div-inner-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.short-link{
+    color: rgb(40, 180, 180);
+    margin-right: 25px;
+    font-size: 1.25em;
+}
+
+.btn-copy-link{
+    background-color: #2bd1d1;
+    color: white;
+    float: right;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: #319bb6 0px 3px ;
+    transition: all .07s linear;
+}
+.btn-copy-link:hover{
+    box-shadow: #1f6374 0px 3px ;
+}
+.btn-copy-link:active{
+    box-shadow: none ;
+    transform: translateY(3px);
+}
+
+.btn-copy-link-copied{
+    background-color: hsl(257, 27%, 26%);
+    box-shadow: hsl(256, 25%, 20%) 0px 3px;
+}
+.btn-copy-link-copied:hover{
+    box-shadow: hsl(259, 26%, 14%) 0px 3px;
+}
+.btn-copy-link-copied:active{
+    box-shadow: none ;
+    transform: translateY(3px);
+}
+
+.container-Loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Loader-SVG{
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+    display:inline-block;
+}
+
+@media only screen and (max-width:1000px){    
+    .header-Article1-Main{
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        background-color: #3a3053;
+        background-image: url(./../../../assets/svg/bg-shorten-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .input-Article1-Main{
+        width: 80%;
+        text-align: center;
+        padding: 0;
+    }
+    .BTN-Article1-Main{
+        width: 80%;
+        margin-top: 20px;   
+        margin-left: 0;    
+    }
+    .p-valid-email{
+        width: 100%;
+        text-align: center;
+        top: 10px;
+        left: 0;
+    }
+    .container-shorterlinks-Article1 {
+        transform: translateY(-75px);
+    }  
+    .div-links{
+        height: max-content;
+        flex-direction: column;
+    }  
+    .div-inner-links{
+     margin: 15px;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .container-Article1-Main{
+        width: 80%;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:450px){  
+    *{
+        text-align: center !important;
+    }
+    p{
+        font-size: medium !important;
+    }  
+    .div-inner-links{
+        flex-direction: column;
+    }
+    .btn-copy-link{
+        margin: 15px;
+    }
+    .input-Article1-Main{
+        font-size: 1em;
+    }
+} 

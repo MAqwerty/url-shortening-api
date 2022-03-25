@@ -1,0 +1,95 @@
+header{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.header-TEXT{
+    width: 45%;
+    padding-right: 45px;
+}
+
+.header-h1{
+    font-size: 3em;
+    line-height: 1.25em;
+    margin-bottom: 25px;
+}
+
+.header-p{
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 25px;
+}
+
+.header-SVG{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    height: 100%;
+    background-image: url(./../../assets/svg/illustration-working.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    background-color: #f0f1f6;
+    position: relative;
+}
+
+.header-button{
+    background-image: linear-gradient(to right,#4fc7d5,#319bb6);
+    color: white;
+    width: 170px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: large;
+}
+.header-button:hover{
+    background-image:linear-gradient(to right,#319bb6,#4fc7d5);
+    border: #319bb6 solid 2px;
+}
+.header-button:active{
+    background-image: linear-gradient(to right,#319bb6,#4fc7d5);
+}
+
+@media only screen and (max-width:1250px){
+    .header-TEXT{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    header{
+        flex-direction: column-reverse;
+        margin-bottom: 125px;
+        text-align: center;
+    }
+    .header-TEXT{
+        width: 80%;
+        padding: 0;
+    }
+    .header-SVG{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width:450px){
+    header{
+        height: 120vh;
+    }  
+}
