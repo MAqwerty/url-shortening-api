@@ -1,3 +1,7 @@
+This API may not be available in your country
+
+![header image](https://raw.github.com/MAqwerty/url-shortening-api/master/desktop-active-states.jpg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
